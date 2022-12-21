@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Course Info</title>
+    <script src="https://kit.fontawesome.com/4a4cdabfb3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style/miniproject.css">
+  </head>
+  <body>
+    <header>
+      <div class="searchbox">
+        <input class="input" type="text" id="myinput" onkeyup="myfunc()" name="" placeholder="type your course name">
+        <div class="searchbtn">
+      <i class="fas fa-search"></i>
+        </div>
+      </div>
+      <ul id="myul">
+        <li><a href="blockchain.html">Blockchain</a></li>
+        <li><a href="datascience.html">Datascience</a></li>
+        <li><a href="cloud.html">Cloud computing</a></li>
+        <li><a href="iot.html">IOT(internet of things)</a></li>
+        <li><a href="machinelearn.html">Machine Learning</a>
+      </ul>
+      <script>
+      function myfunc() {
+var input, filter, ul, li, a, i, txtValue;
+input = document.getElementById('myinput');
+filter = input.value.toUpperCase();
+ul = document.getElementById("myul");
+li = ul.getElementsByTagName('li');
+for (i = 0; i < li.length; i++) {
+  a = li[i].getElementsByTagName("a")[0];
+  txtValue = a.textContent || a.innerText;
+  if (txtValue.toUpperCase().indexOf(filter) > -1) {
+    li[i].style.display = "";
+  } else {
+    li[i].style.display = "none";
+  }
+}
+}
+      </script>
+    </header>
+  </body>
+</html>

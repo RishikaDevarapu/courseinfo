@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400&display=swap');
+*{
+  margin: 0 ;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  font-family: 'Comfortaa', cursive;
+}
+header{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1),#C0C0C0),url(../images/pic4.jfif);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+.searchbox
+{
+  position: absolute;
+  top: 64%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background: rgba(0, 0, 0, 0.6);
+  max-width: 550px;
+  width: 100%;
+  padding:15px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+.searchbox .input
+{
+  width:80%;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.searchbtn
+{
+  background: #ffec00;
+  width: 10%;
+  border-radius: 5px;
+  position: relative;
+  cursor: pointer;
+}
+.searchbtn .fas
+{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 18px;
+}
+#myul
+{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 75%;
+  left: 30%;
+
+}
+#myul li a
+{
+  background-color: #f6f6f600;
+  text-decoration: none;
+  colour: black;
+  display: block;
+}
+#myul li a:hover
+{
+  background-color: #eee;
+}
